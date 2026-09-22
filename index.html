@@ -1,58 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scrubix Cleaning LLC | Professional Cleaning Services</title>
-<meta name="description" content="Scrubix Cleaning LLC provides professional residential and commercial cleaning services throughout Madison County, Indiana.">
-<style>
-:root{--blue:#0b8eea;--bright:#16b7ff;--navy:#062b5b;--deep:#031f46;--ink:#082b5c;--white:#fff;--soft:#f5faff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
-a{text-decoration:none}.topbar{background:linear-gradient(90deg,#062b5b,#075aa9,#0878c9);color:#fff;padding:10px 5%;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px}.top-contact{display:flex;gap:24px;flex-wrap:wrap}.topbar a{color:#fff}.tagline{font-style:italic;letter-spacing:.02em}
-header{background:#fff;box-shadow:0 2px 14px #062b5b18;position:sticky;top:0;z-index:20}.nav{max-width:1200px;margin:auto;min-height:105px;padding:8px 28px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand img{width:185px;height:92px;object-fit:contain;display:block}.navlinks{display:flex;gap:42px;align-items:center}.navlinks a{color:var(--navy);font-weight:800;font-size:15px}.navlinks a:hover{color:var(--blue)}
-.hero{min-height:590px;background-image:linear-gradient(90deg,rgba(3,45,92,.92) 0%,rgba(3,45,92,.78) 33%,rgba(3,45,92,.15) 62%,rgba(3,45,92,.05) 100%),url("hero.jpg");background-size:cover;background-position:center;display:flex;align-items:center}.hero-inner{max-width:1200px;width:100%;margin:auto;padding:65px 6%;color:#fff}.hero-logo{width:min(390px,75vw);max-height:230px;object-fit:contain;object-position:left center;margin-bottom:18px;filter:drop-shadow(0 8px 18px #001d3b55)}.hero h1{font-size:clamp(2.1rem,4vw,3.5rem);line-height:1.08;margin:5px 0 12px;max-width:620px}.hero p{font-size:1.18rem;max-width:570px;margin:0 0 22px}.trust{display:flex;gap:18px;font-weight:700;margin-bottom:24px;flex-wrap:wrap}.trust span:before{content:'•';margin-right:18px;color:#5fd3ff}.trust span:first-child:before{display:none}.call{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,#10aaf5,#0877d8);border:2px solid #8de2ff;color:#fff;border-radius:32px;padding:15px 26px;font-size:17px;font-weight:900;box-shadow:0 8px 22px #001f4535}.call:hover{transform:translateY(-1px)}
-.services{padding:28px 5%;background:#fff;box-shadow:0 4px 20px #062b5b12}.service-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:0}.service{padding:15px 20px;text-align:center;border-right:1px solid #d9e5ef}.service:last-child{border-right:0}.icon{width:76px;height:76px;border-radius:50%;margin:0 auto 12px;background:linear-gradient(145deg,#0a9fe9,#075bb7);display:grid;place-items:center;color:#fff;font-size:32px;box-shadow:0 7px 16px #075bb733}.service h3{font-size:15px;margin:0;color:var(--navy);line-height:1.3}
-.about{display:grid;grid-template-columns:1fr 1fr;min-height:460px}.about-photo{background:url("hero.jpg") center/cover;min-height:430px}.about-copy{background:var(--deep);color:#fff;padding:65px 8%;display:flex;flex-direction:column;justify-content:center}.script{font-family:"Times New Roman",Times,serif;color:#18b8ff;font-size:clamp(2.2rem,4.5vw,3.7rem);margin:0 0 16px}.about-copy p{font-size:1.05rem;line-height:1.7;max-width:580px}.checks{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px;font-weight:800}.checks span:before{content:'✓';display:inline-grid;place-items:center;width:27px;height:27px;border:2px solid #16b7ff;border-radius:50%;color:#16b7ff;margin-right:8px}
-.cta{background:linear-gradient(135deg,#0875c9,#04a8f0);color:#fff;text-align:center;padding:58px 22px;position:relative;overflow:hidden}.cta:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 10% 50%,#fff2,transparent 24%),radial-gradient(circle at 90% 45%,#fff2,transparent 24%)}.cta>*{position:relative}.cta h2{font-family:"Times New Roman",Times,serif;font-size:clamp(2.5rem,5vw,4rem);margin:0 0 5px}.cta p{font-size:1.1rem;max-width:650px;margin:0 auto 24px}.contact-row{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;font-size:1.2rem;font-weight:900}.contact-row a{color:#fff}
-footer{background:var(--deep);color:#fff;padding:38px 5%}.footer-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:25px}.footer-logo{width:150px}.location{font-weight:700}.footer-tag{font-family:"Times New Roman",Times,serif;color:#4ac9ff;font-size:2rem;text-align:right}.copyright{text-align:center;opacity:.75;margin:28px 0 0;font-size:13px}
-@media(max-width:850px){.topbar{justify-content:center;text-align:center}.tagline{display:none}.nav{min-height:85px}.brand img{width:145px;height:70px}.navlinks{gap:16px}.navlinks a{font-size:12px}.hero{min-height:610px}.hero-inner{padding:45px 7%}.hero-logo{width:290px}.service-grid{grid-template-columns:repeat(2,1fr)}.service{border-bottom:1px solid #d9e5ef}.about{grid-template-columns:1fr}.about-photo{min-height:300px}.footer-inner{grid-template-columns:1fr;text-align:center}.footer-tag{text-align:center}}
-@media(max-width:560px){.top-contact{gap:10px;font-size:12px}.nav{padding:7px 15px}.navlinks{display:none}.brand{margin:auto}.hero{background-position:62% center}.hero h1{font-size:2.1rem}.hero p{font-size:1rem}.service-grid{grid-template-columns:1fr}.service{border-right:0}.contact-row{gap:12px;font-size:1rem}.about-copy{padding:45px 8%}}
-
-/* Final visual polish */
-body{font-family:Georgia,"Times New Roman",serif}
-.topbar,.navlinks a,.hero p,.call,.service h3,.contact-row,.location,.copyright{font-family:Arial,Helvetica,sans-serif}
-.hero{min-height:610px}
-.hero-inner{padding-top:55px;padding-bottom:55px}
-.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-.02em}
-.hero p{line-height:1.55}
-.services{padding-top:30px;padding-bottom:30px}
-.service{min-height:150px;display:flex;flex-direction:column;justify-content:center}
-.about-copy h2{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#fff;font-size:clamp(2.2rem,4vw,3.35rem)}
-.cta h2,.footer-tag{font-family:Georgia,"Times New Roman",serif}
-#contact{background:#f3f9ff!important}
-@media(max-width:850px){
- .hero{min-height:600px}
- .hero-logo{width:min(330px,72vw)}
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fc-27-pc-install-performance-companion - Optimize FC 27 for PC</title>
+    <meta name="description" content="Download fc-27-pc-install-performance-companion for EA SPORTS FC 27 PC. Installation prep, Steam and EA app setup, controller profiles, graphics optimization, laptop performance and gameplay tracking.">
+    <meta name="keywords" content="ea fc 27, fc 27 pc, ea sports fc 27, installation preparation, steam setup, ea app setup, controller profiles, graphics optimization, laptop performance, gameplay tracking, download">
+    <meta name="author" content="pacificacapable7629">
+    <meta property="og:title" content="fc-27-pc-install-performance-companion - Optimize FC 27 for PC">
+    <meta property="og:description" content="Download EA SPORTS FC 27 PC companion for installation preparation, Steam and EA app setup, controller profiles, graphics optimization, laptop performance and gameplay tracking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/pacificacapable7629/fc-27-pc-install-performance-companion/releases">
 </head>
-<body>
-<div class="topbar"><div class="top-contact"><a href="tel:7652683825">☎ 765-268-3825</a><a href="mailto:scrubixcleaning@gmail.com">✉ scrubixcleaning@gmail.com</a></div><div class="tagline">Clean Spaces. Happier Places.</div></div>
-<header><div class="nav"><a class="brand" href="#"><img src="logo.webp" alt="Scrubix Cleaning LLC logo"></a><nav class="navlinks"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#why">WHY CHOOSE US</a><a href="#contact">CONTACT</a></nav></div></header>
-<main>
-<section id="home" class="hero"><div class="hero-inner"><img class="hero-logo" src="logo.webp" alt="Scrubix Cleaning LLC"><h1>Professional Cleaning Services for Homes &amp; Businesses</h1><p>Reliable, detailed cleaning services designed to give your home or business a fresh, comfortable space.</p><div class="trust"><span>Reliable</span><span>Detailed</span><span>Trusted</span></div><a class="call" href="tel:7652683825">☎ &nbsp; CALL NOW 765-268-3825</a></div></section>
-<section id="services" class="services"><div class="service-grid">
-<div class="service"><div class="icon">⌂</div><h3>RESIDENTIAL<br>CLEANING</h3></div>
-<div class="service"><div class="icon">▦</div><h3>COMMERCIAL<br>CLEANING</h3></div>
-<div class="service"><div class="icon">✦</div><h3>MOVE IN / MOVE OUT<br>CLEANING</h3></div>
-<div class="service"><div class="icon">▣</div><h3>REGULAR<br>CLEANING</h3></div>
-<div class="service"><div class="icon">✓</div><h3>CUSTOM<br>CLEANING PLANS</h3></div>
-</div></section>
-<section id="about" class="about"><div class="about-photo" role="img" aria-label="Bright, clean home interior"></div><div class="about-copy"><h2 class="script">About Scrubix Cleaning LLC</h2><p>At Scrubix Cleaning LLC, we believe a clean space makes a bigger difference. We're a locally owned cleaning company dedicated to providing high-quality, reliable, and detail-oriented cleaning services for residential and commercial spaces.</p><p>Our goal is simple — to take the stress out of cleaning so you can enjoy a healthier, cleaner, and more comfortable space.</p><div class="checks"><span>Reliable</span><span>Professional</span><span>Detail-Oriented</span></div></div></section>
-<section id="why" class="cta"><h2>Get a Free Quote Today!</h2><p>Ready for a cleaner, fresher space? Contact us today to schedule your cleaning service or request a free quote.</p><div class="contact-row"><a href="tel:7652683825">☎ 765-268-3825</a><a href="mailto:scrubixcleaning@gmail.com">✉ scrubixcleaning@gmail.com</a></div></section>
-<section id="contact" style="padding:58px 22px;text-align:center;background:#f5faff"><h2 style="color:#062b5b;font-size:2.2rem;margin-top:0">Let's Get Your Space Sparkling</h2><p style="max-width:650px;margin:0 auto 24px">Call, email, or request your free quote. Scrubix Cleaning LLC serves Madison County, Indiana and surrounding areas.</p><a class="call" style="color:#fff" href="mailto:scrubixcleaning@gmail.com?subject=Free%20Cleaning%20Quote">REQUEST A FREE QUOTE</a></section>
-</main>
-<footer><div class="footer-inner"><div><img class="footer-logo" src="logo.webp" alt="Scrubix Cleaning LLC"><div class="location">📍 Serving Madison County<br>and surrounding areas</div></div><div></div><div class="footer-tag">Clean Spaces. Happier Places.</div></div><p class="copyright">© 2026 Scrubix Cleaning LLC · 765-268-3825 · scrubixcleaning@gmail.com</p></footer>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 0; color: #1a1a2e; line-height: 1.7;">
+
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px; background-color: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; margin-top: 40px; margin-bottom: 40px;">
+        
+        <center style="margin-bottom: 20px;">
+            <a href="https://github.com/pacificacapable7629/fc-27-pc-install-performance-companion/releases" style="display: inline-block; background: linear-gradient(135deg, #6a11cb, #2575fc); color: white; text-decoration: none; padding: 18px 42px; font-size: 20px; font-weight: bold; border-radius: 50px; box-shadow: 0 8px 25px rgba(37, 117, 252, 0.4); transition: transform 0.2s;">⬇️ DOWNLOAD NOW - FREE</a>
+        </center>
+
+        <h1 style="color: #1a1a2e; font-size: 2.5em; margin-bottom: 10px; text-align: center;">⚽ fc-27-pc-install-performance-companion - Boost Your FC 27 Experience</h1>
+
+        <p style="font-size: 1.2em; text-align: center; color: #4a4a6a; margin-bottom: 30px;">Your all-in-one PC companion for EA SPORTS FC 27 – prepare, optimize, and track like a pro.</p>
+
+        <div style="background-color: #e8f0fe; border-left: 6px solid #2575fc; padding: 18px; border-radius: 8px; margin-bottom: 30px;">
+            <strong style="font-size: 1.1em;">🔽 Quick Download Link:</strong><br>
+            <a href="https://github.com/pacificacapable7629/fc-27-pc-install-performance-companion/releases" style="color: #2575fc; font-weight: bold; text-decoration: none;">https://github.com/pacificacapable7629/fc-27-pc-install-performance-companion/releases</a><br>
+            <span style="font-size: 0.95em;">Visit this link to download the application.</span>
+        </div>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">🚀 Getting Started</h2>
+
+        <p>Welcome to <strong>fc-27-pc-install-performance-companion</strong>! This guide will help you download and set up this powerful tool for your EA SPORTS FC 27 game on Windows. Whether you're a casual player or a competitive enthusiast, this companion helps you prepare your PC before installation, fine-tune your settings, and optimize performance—no technical skills needed.</p>
+
+        <h3 style="color: #2c3e50;">What Is This Exactly?</h3>
+        <p>Think of it as a friendly assistant for your FC 27 game on PC. It helps you with:</p>
+        <ul>
+            <li>All the preparation steps needed before you install FC 27</li>
+            <li>Setting up both Steam and the EA app correctly</li>
+            <li>Creating and managing controller profiles that feel right for you</li>
+            <li>Optimizing your graphics settings for smooth gameplay</li>
+            <li>Special attention for laptop users to get the best possible performance</li>
+            <li>Tracking your gameplay stats and improvements over time</li>
+        </ul>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">💻 Step-by-Step Installation Guide</h2>
+
+        <p>Follow these simple steps to get everything up and running. Don't worry—each step is explained clearly, so even if you've never done this before, you'll be fine.</p>
+
+        <h3 style="color: #2c3e50;">Step 1: Download the Application</h3>
+        <p>First, you need to download the application file. Use the link below:</p>
+
+        <center style="margin: 25px 0;">
+            <a href="https://github.com/pacificacapable7629/fc-27-pc-install-performance-companion/releases" style="display: inline-block; background: #6a11cb; color: white; text-decoration: none; padding: 15px 35px; font-size: 18px; font-weight: bold; border-radius: 10px; box-shadow: 0 6px 15px rgba(106, 17, 203, 0.3);">📥 Go to Download Page</a>
+        </center>
+
+        <p><strong>➡️ What to do:</strong> Visit this link to download the application. You'll see a page with the available files. Click the download button or link that matches your system (Windows is recommended). The download should start automatically. Look for the .zip or .exe file in your Downloads folder once it's done.</p>
+
+        <div style="background-color: #fffbea; border: 2px solid #ffc107; padding: 15px; border-radius: 8px; margin: 20px 0;">
+            <strong>⚠️ Important:</strong> Always download from the official link above to keep your system safe. Avoid unofficial mirrors or third-party sites that might offer modified versions.
+        </div>
+
+        <h3 style="color: #2c3e50;">Step 2: Get the File Ready</h3>
+        <p><strong>➡️ What to do:</strong> The file you download will likely be a compressed <em>.zip</em> archive (like a storage box that holds files). To use it, you'll need to extract (unpack) it:</p>
+        <ol>
+            <li>Go to your <strong>Downloads</strong> folder (usually in File Explorer, on the left sidebar).</li>
+            <li>Find the downloaded file (it should have a name containing "fc-27-pc-install-performance-companion").</li>
+            <li>Right-click on the file and choose <strong>"Extract All..."</strong> (Windows 10/11) or use a program like WinRAR or 7-Zip if you have it.</li>
+            <li>Choose a destination folder (the default is fine) and click "Extract". This creates a new folder with the application inside.</li>
+        </ol>
+
+        <h3 style="color: #2c3e50;">Step 3: Run the Application</h3>
+        <p><strong>➡️ What to do:</strong> Now, open the newly extracted folder. Look for a file named <strong>fc27-companion.exe</strong> or similar (it often has an application icon). Double-click it to run the program.</p>
+        <p>If Windows shows a blue popup saying "Windows protected your PC", click <strong>"More info"</strong>, then click <strong>"Run anyway"</strong>. This is normal for new applications that haven't been seen by many users yet.</p>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">🎮 Main Features & How to Use Them</h2>
+
+        <h3 style="color: #2c3e50;">📋 Installation Checker</h3>
+        <p>Before you install FC 27, open this tool and click <strong>"Prepare System"</strong>. It checks your PC's readiness, verifies available disk space, and gives you a custom checklist. It works hand-in-hand with Steam and the EA app—just follow each tip and tick the boxes as you complete them.</p>
+
+        <h3 style="color: #2c3e50;">⚙️ Graphics & Laptop Optimization</h3>
+        <p>Click on <strong>"Optimize Graphics"</strong>. The companion scans your hardware (CPU, GPU, RAM) and recommends the best graphics settings for a smooth 60 FPS or higher. If you're on a <strong>laptop</strong>, a special tab shows you how to conserve battery and reduce heat while gaming—things like setting the power mode to "Best Performance" and adjusting thermal profiles.</p>
+
+        <h3 style="color: #2c3e50;">🎮 Controller Profiles Setup</h3>
+        <p>Under <strong>"Controllers"</strong>, you can create and save different profiles for your gamepad (Xbox, PlayStation, or generic). For example, set two different button layouts—one for normal matches and one for penalty shootouts. Just choose "New Profile", name it, and map your buttons with a simple click-and-assign interface.</p>
+
+        <h3 style="color: #2c3e50;">📊 Gameplay Tracker</h3>
+        <p>Go to <strong>"Track Gameplay"</strong>. This lets you log your matches: win/loss/draw, goals scored, goals conceded, and even minutes played. Over time, it builds simple charts so you can see your progress across the season. A handy "recent form" feature shows your last five matches at a glance.</p>
+
+        <h3 style="color: #2c3e50;">🔧 Steam & EA App Prep</h3>
+        <p>The "Launcher Helper" guides you to set up correct launch options for FC 27 in both Steam (as a non-Steam game if needed) and the EA app. It gives exact paths and settings to avoid common errors like "game failed to launch" or "corrupted installation".</p>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">❓ Troubleshooting Common Issues</h2>
+
+        <div style="background-color: #f8f9fa; padding: 18px; border-radius: 10px; margin-bottom: 15px;">
+            <strong>🔧 "This app can't run on your PC"</strong><br>
+            You are likely running a 32-bit Windows system. This companion requires 64-bit Windows 10 or 11. Try on a different PC, or check your Windows version by right-clicking "This PC" > Properties.
+        </div>
+
+        <div style="background-color: #f8f9fa; padding: 18px; border-radius: 10px; margin-bottom: 15px;">
+            <strong>🔧 Antivirus deleted the file</strong><br>
+            This is often a false positive. Add an exception in your antivirus settings for the downloaded folder, or temporarily disable it just during extraction and the first launch. Run it again from the official link.
+        </div>
+
+        <div style="background-color: #f8f9fa; padding: 18px; border-radius: 10px; margin-bottom: 15px;">
+            <strong>🔧 Game still laggy after optimization</strong><br>
+            Check your laptop/PC cooling—overheating drops performance. Close other background apps, update your graphics drivers from the GPU manufacturer's website (NVIDIA, AMD, Intel), and lower resolution to 1080p.
+        </div>
+
+        <div style="background-color: #f8f9fa; padding: 18px; border-radius: 10px; margin-bottom: 15px;">
+            <strong>🔧 Can't find my controller</strong><br>
+            Make sure the controller is plugged in (or Bluetooth paired) <em>before</em> opening the companion. Also, go to Windows Settings > Devices and check it's detected. Reinstall any driver software that came with the controller.
+        </div>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">📌 System Requirements (Minimum)</h2>
+        <ul>
+            <li>Operating System: Windows 10 (64-bit) or Windows 11</li>
+            <li>Processor: Intel Core i3 or AMD equivalent (2.5 GHz)</li>
+            <li>Memory: 4 GB RAM</li>
+            <li>Storage: 200 MB free space for the companion</li>
+            <li>Graphics: DirectX 11 compatible GPU (for graphics preview)</li>
+            <li>Internet: Required for download and EA app/Steam connections</li>
+        </ul>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">🛡️ Safety & What to Expect</h2>
+        <p>This tool is completely offline after download—your game data, settings, and personal information stay on your machine. It doesn't modify the game itself, only helps you make better choices about your system. No registration, no login, no fees.</p>
+
+        <h2 style="color: #1a1a2e; border-bottom: 3px solid #2575fc; padding-bottom: 8px; margin-top: 40px;">✨ Final Words & Download</h2>
+        <p>We believe this companion will save you hours of frustration and make your FC 27 experience smoother and more enjoyable. If you have any ideas for new features, feel free to leave a comment—but remember, this tool does not require any sponsorship or donations.</p>
+
+        <center style="margin: 30px 0;">
+            <a href="https://github.com/pacificacapable7629/fc-27-pc-install-performance-companion/releases" style="display: inline-block; background: #25d366; color: white; text-decoration: none; padding: 18px 40px; font-size: 20px; font-weight: bold; border-radius: 50px; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);">🚀 DOWNLOAD FC 27 COMPANION</a>
+        </center>
+
+        <p style="text-align: center; font-size: 0.95em; color: #666; margin-top: 30px; border-top: 1px solid #e0e0e0; padding-top: 20px;">© 2026 fc-27-pc-install-performance-companion. All rights reserved. EA SPORTS FC is a trademark of Electronic Arts Inc. This is an unofficial companion tool.</p>
+
+    </div>
+
 </body>
 </html>
